@@ -86,6 +86,13 @@ body {
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
 }
+.skills-class {
+	padding: 0 18px;
+	background-color: #f5f5f5;
+	display: none;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 #my-intro{
 	font-size: 22px; 
 	background-color: #e6e6e6;
@@ -127,13 +134,53 @@ nav a:nth-child(2){
 }
 .apps {
 	background-color: #e6e6e6;
-	margin-top: 40px;
-	margin-left: 60px;
+	margin-top: 20px;
 	margin-right: 60px;
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 0 14px #000000;
 	border-radius: 10px;
+}
+.skills {
+	background-color: #e6e6e6;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 27%;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 14px #000000;
+	border-radius: 10px;
+	text-align: center;
+	float: left;
+}
+.frameworks {
+	background-color: #e6e6e6;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	width: 27%;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 14px #000000;
+	border-radius: 10px;
+	text-align: center;
+	float: left;
+}
+.interests {
+	background-color: #e6e6e6;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	width: 27%;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 14px #000000;
+	border-radius: 10px;
+	text-align: center;
+	float: left;
+}
+#lang {
+	padding-bottom: 10px; 
 }
 #appName {
 	font-size: 22px;
