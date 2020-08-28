@@ -1,177 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-
-	<title>Anirban Kumar</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<script type="text/javascript" src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirban Kumar</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
+<!-- ================== START HEADER ==================-->
+    <header class="header_area"> 
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light"><!--navbar-dark bg-dark-->
+                <!--<a class="navbar-brand" href="#">Anirban Kumar</a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#AboutMe">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Interests">Interests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+              </nav>
+        </div>
+    </header>
+<!-- ================== END HEADER ==================-->
 
-	<div class="wrapper">
-		<nav class="navBar">
-			<a href="#">
-				<img src="me.jpg">
-			</a>
-		</nav>
-		<header>
-			<h1>Anirban Kumar</h1>
-			<p id="my-intro">Hey, welcome to my website! <br><br> I'm currently a sophomore at Rutgers University, majoring in computer science. <a onclick="myFunction()">I</a> like solving problems that I personally face using code and hope it helps other people too. I develop iOS apps using Swift and Xcode for the most part, but am well versed in Java, HTML, and CSS. I'm currently trying to teach myself Python and its important frameworks by building an app that analyzes your Apple Music listening history.<br><br>You can follow me on my <a href="https://www.twitter.com/anirbank2000" target="_blank"><font color="black">Twitter</font></a>, view my profile on <a href="https://linkedin.com/in/anirban-k-383369113/" target="_blank"><font color="black">LinkedIn</font></a>, download my apps from the <a href="https://apps.apple.com/us/developer/anirban-kumar/id981741715" target="_blank"><font color="black">App Store</font></a>, view my code on <a href="https://www.github.com/anirbankumar" target="_blank"><font color="black">GitHub</font></a>, or look at my <a href="resume_v1.pdf" target="_blank"><font color="black">resume.</font></a></p>
 
-		</header>
+<!-- ================== START MAIN ==================-->
 
-		<button id="projects-accordion" class="projects-accordian"><font color="black">Completed Projects</font>  </button>
-		<div class="completed-projects">
-			<article class="apps">
-				<h2 id="appName">Blockr & Blockr Plus</h2>
-				<h2 id="releaseDate">Released in 2015</h2>
-				<p id="project-descript">These were my first two apps and they block ads on iOS' Safari. Blockr Plus is an extension to Blockr and also blocks YouTube ads. I removed Blockr Plus in the beginning of 2020.</p>
-				<img id="ss" src="blockr.jpg">
-				<img id="ss" src="blockrplus.jpg">
-				<br>
-				<button id="appStore"> <a href="https://apps.apple.com/us/app/blockr-stop-ads-once-and-for-all/id1042439935" target="_blank"><font color="white">View <strong>Blockr</strong> on the App Store</font></a></button>
-			</article>
-			<article class="apps">
-				<h2 id="appName">SAHRI</h2>
-				<h2 id="releaseDate">Released in 2016</h2>
-				<p id="project-descript">SAHRI was an app I voluntarily made for a non profit orgnization. It's the official app for the South Asian Health Research Institute. Through this app, we aim to get people information about various health topics that effect South Asians quickly.</p>
-				<img id="ss" src="sahri.jpg">
-				<br>
-				<button id="appStore"> <a href="https://apps.apple.com/us/app/sahri/id1055531311" target="_blank"><font color="white">View <strong>SAHRI</strong> on the App Store</font></a> </button>
-			</article>
-			<article class="apps">
-				<h2 id="appName">Dodgy Ninja</h2>
-				<h2 id="releaseDate">Released in 2016</h2>
-				<p id="project-descript">Granted it's no Fortnite, but this was the first game I made. It's fairly simple code and logic wise, but I learned a lot. The objective is to make sure the Ninja doesn't run into any walls by tapping the screen.</p>
-				<img id="ss" src="dodgy1.png">
-				<img id="ss" src="dodgy2.png">
-				<img id="ss" src="dodgy3.png">
-				<br>
-				<button id="appStore"> <a href="https://apps.apple.com/us/app/dodgy-ninja/id1186926121" target="_blank"><font color="white">View <strong>Dodgy Ninja</strong> on the App Store</font></a> </button>
-			</article>
-			<article class="apps">
-				<h2 id="appName">Basketball Keeper</h2>
-				<h2 id="releaseDate">Released in 2016</h2>
-				<p id="project-descript">Keep track of your basketball game with ESPN-like detailed statistics. Track points, fouls, shots to create a detailed game report, which you can email to yourself as a PDF. This app was featured as an App Store Story <a href="https://apps.apple.com/us/story/id1468317935">here</a>.</p>
-				<img id="ss" src="basketball1.png">
-				<img id="ss" src="basketball2.png">
-				<img id="ss" src="basketball3.png">
-				<br>
-				<button id="appStore"> <a href="https://apps.apple.com/us/app/basketball-keeper/id1145996975" target="_blank"><font color="white">View <strong>Basketball Keeper</strong> on the App Store</font></a> </button>
-			</article>
-			<article class="apps">
-				<h2 id="appName">Locate It AR</h2>
-				<h2 id="releaseDate">Released in 2019</h2>
-				<p id="project-descript">AR Locator allows you to pin locations and view them using AR. It's like an AR compass that can help you find your parked car in a crowded parking lot or view other places, such as famous landmarks.</p>
-				<img id="ss_X" src="locate1.jpg">
-				<img id="ss_X" src="locate2.jpg">
-				<img id="ss_X" src="locate3.jpg">
-				<br>
-				<button id="appStore"> <a href="https://apps.apple.com/us/app/locate-it-ar/id1471881053" target="_blank"><font color="white">View <strong>Locate It AR</strong> on the App Store</font></a> </button>
-			</article>
-			<article class="apps">
-				<h2 id="appName">InstaMusic</h2>
-				<h2 id="releaseDate">Won't be releasing it, but it's available on my GitHub.</h2>
-				<p id="project-descript">InstaMusic allows Apple Music users to easily share what they're listening to to Instagram Stories as a nice image. </p>
-				<img id="ss_X" src="instamusic.png">
-				<img id="ss_X" src="instamusic2.png">
-				<br>
-				<button id="appStore"> <a href="https://github.com/AnirbanK2000/InstaMusic" target="_blank"><font color="white">View <strong>InstaMusic</strong> on GitHub</font></a> </button>
-			</article>
-			<br>
+<main class="site-main" id="Home">
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text">Hey</h3>
+                    <h1 class="title-text text-uppercase">I am Anirban</h1>
+                    <h4 class="title-text text-uppercase">Student at Rutgers University</h1>
+                    <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap">
+                            <button type="button" class="btn button primary-button mr-4 text-uppercase" onclick="location.href='mailto:anisingh2000@gmail.com?subject=Hello!'">Email Me</button>
+                            <a href="./Anirban's Resume.pdf">
+                                <button type="button" class="btn button secondary-button mr-4 text-uppercase">Resume</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div id="social-icons">
+                        <a href="https://github.com/anirbankumar" target="_blank">
+                          <img class="social-icon" src="./img/github.png">
+                        </a>
+              
+                        <a href="https://twitter.com/anirbank2000?lang=en" target="_blank">
+                          <img class="social-icon last" src="./img/twitter.png">
+                        </a>
+              
+                        <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank">
+                          <img class="social-icon last" src="./img/linkedin.png">
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-6 col-md-12 banner-image">
+                    <img src="./img/banner-image2.png" alt="Person coding picture" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-		</div>
+<!-- ==================  END MAIN  ==================-->
 
-		<button id="projects-accordion" class="projects-accordian"><font color="black">Ongoing Projects</font>  </button>
 
-		<div class="ongoing-projects">
-			<article class="apps">
-				<h2 id="appName">HWDYKM</h2>
-				<h2 id="releaseDate">Should be available by May 2020.</h2>
-				<p id="project-descript">HWDYKM, which stands for How Well Do You Know Me, is an app that allows friends and families to take quizzes to see how well the know each other. There is a generic quiz with preset questions or users can make their own custom quiz with up to 10 questions.</p>
-				<img id="ss_X" src="hwdykm1.jpg">
-				<img id="ss_X" src="hwdykm2.jpg">
-				<img id="ss_X" src="hwdykm3.jpg">
-				<br>
-			</article>
-			<br>
-		</div>
+<!-- ================== START ABOUT ==================-->
 
-		<button id="projects-accordion" class="projects-accordian"><font color="black">Stuff About Me</font>  </button>
+<class class="about-area" id="AboutMe">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <img src="./img/about-us.png" alt="About Us" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-12 about-title">
+                <h2 class="text-uppercase pt-5">
+                    <span>👋About me</span>
+                </h2>
+                <div class="paragraph py-4 w-75">
+                    <p class="para">
+                        Hey! I'm currently a junior at Rutgers University studying IT and Computer Science. I like problem solving, which is the main reason I really enjoy coding. I've been developing iOS apps for the last 4 years, releasing 5 apps on the  App Store, which have been used by over 80,000 people. I haven't limited myself to just iOS development though. Through personal projects and coursework, I've gotten very familiar with Java, Python, HTML/CSS, and even C.
+                    </p>
+                    <p class="para">
+                        I love watching The Office, going on hikes, playing various sports, and building things with LEGOs.
+                    </p>
+                </div>
+                <a href="./Anirban's Resume.pdf" download="Anirban's Resume">
+                    <button type="button" class="btn button primary-button text-uppercase">Download Resume</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</class>
+<!-- ==================  END ABOUT  ==================-->
 
-		<div class="skills-class">
-			<article class="skills">
-				<h2 id="lang">Languages</h2>
-				Swift
-				<br>
-				Java
-				<br>
-				HTML
-				<br>
-				CSS
-				<br>
-				C (learning)
-				<br>
-				Python (learning)
-			</article>
-			<article class="frameworks">
-				<h2 id="lang">Frameworks/Technologies</h2>
-				UIKit
-				<br>
-				ARKit
-				<br>
-				CoreData
-				<br>
-				Firebase
-				<br>
-				RESTful APIs
-				<br>
-				SwiftUI (learning)
-			</article>
-			<article class="interests">
-				<h2 id="lang">Interests</h2>
-				Astronomy
-				<br>
-				Augmented Reality
-				<br>
-				Hiking
-				<br>
-				The Office
-				<br>
-				Helping people
-				<br>
-				Learning
-			</article>
-		</div>
 
-	</div>
+<!-- ==================  START PROJECTS  ==================-->
 
-	<script>
-		var acc = document.getElementsByClassName("projects-accordian");
-		var i;
 
-		for (i = 0; i < acc.length; i++) {
-		  acc[i].addEventListener("click", function() {
-		    this.classList.toggle("active");
-		    var panel = this.nextElementSibling;
-		    if (panel.style.display === "block") {
-		      panel.style.display = "none";
-		    } else {
-		      panel.style.display = "block";
-		    }
-		  });
-		}
+<section class="project-area" id="Projects">
+    <class class="container">
+        <div class="col-lg-6 col-md-12 project-title">
+            <h2 class="text-uppercase pt-5">
+                <span>🖥 Projects</span>
+            </h2>
+        </div>
+        <div class="card-columns">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">Whole Foods Automation</h4>
+                    </div>
+                    <p class="card-text">Automate the Whole Foods checkout process.</p>
+                    <br>
+                    <a href="https://github.com/anirbankumar/wholefoodsautomated" target="_blank" class="btn btn-primary stretched-link completed-project">On GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">This or That Polls</h4>
+                    </div>
+                    <p class="card-text">Anonomously take fun and interesting polls.</p>
+                    <br>
+                    <a href="https://apps.apple.com/us/app/this-or-that-polls/id1506618182" target ="_blank" class="btn btn-primary stretched-link completed-project">On  App Store</a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">HWDYKM</h4>
+                    </div>
+                    <p class="card-text">Create quizzes and have your friends take them to see how well they know you!</p>
+                    <br>
+                    <a href="https://apps.apple.com/us/app/hwdykm/id1503943306" target="_blank" class="btn btn-primary stretched-link completed-project">On  App Store</a>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://assets.exercism.io/tracks/objective-c-bordered-turquoise.png" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">Basketball Keeper</h4>
+                    </div>
+                    <p class="card-text">Keep track of your basketball game and individual stats.</p>
+                    <br>
+                    <a href="https://apps.apple.com/us/app/basketball-keeper/id1145996975" target="_blank" class="btn btn-primary stretched-link completed-project">On  App Store</a>
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">Apple Music Analysis</h4>
+                    </div>
+                    <p class="card-text">See your most streamed songs, albums, and artists.</p>
+                    <br>
+                    <a href="https://github.com/anirbankumar/applemusicanalysis" target="_blank" class="btn btn-primary stretched-link completed-project">On GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">Locate It AR</h4>
+                    </div>
+                    <p class="card-text">Save locations such as your parked car and view them in AR to help locate it.</p>
+                    <br>
+                    <a href="https://apps.apple.com/us/app/locate-it-ar/id1471881053" target="_blank" class="btn btn-primary stretched-link completed-project">On  App Store</a>
+                </div>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">InstaMusic</h4>
+                    </div>
+                    <p class="card-text">Share what you're listening to on Apple Music to your Instagram Story.</p>
+                    <br>
+                    <a href="https://github.com/anirbankumar/InstaMusic" target="_blank" class="btn btn-primary stretched-link completed-project">On GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://assets.exercism.io/tracks/objective-c-bordered-turquoise.png" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">Blockr</h4>
+                    </div>
+                    <p class="card-text">Block ads on Safari for iOS and save valuable time and screen real estate.</p>
+                    <br>
+                    <a href="#" class="btn btn-primary in-work">Being Updated</a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg" height="30px" width="30px" border="1px"></p>
+                        <h4 class="card-title">Inspired Me!</h4>
+                    </div>
+                    <p class="card-text">App with inspirational quotes with Widget support.</p>
+                    <br>
+                    <a href="#" class="btn btn-primary in-work">In Progress</a>
+                </div>
+            </div>
 
-		function myFunction() {
-  			alert("Hello! This is for my mums :)");
-		}
-	</script>
-	<br>
-	<footer id="main-footer">
-		<p>Copyright &copy; 2019, Anirban Kumar.</p>
-	</footer>
+            </div>
+        </div>
+    </class>
+</section>
+<!-- ==================   END PROJECTS   ==================-->
 
+<section class="interest-area" id="Interests">
+    <class class="container">
+        <div class="col-lg-6 col-md-12 project-title">
+            <h2 class="text-uppercase pt-5">
+                <span>🧠 Interests</span>
+            </h2>
+        </div>
+        <div class="card-columns">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;">👨🏽‍💻</p>
+                        <h4 class="card-title">Languages</h4>
+                    </div>
+                    <p class="card-text">Swift</p>
+                    <p class="card-text">Python</p>
+                    <p class="card-text">Java</p>
+                    <p class="card-text">C/C++</p>
+                    <p class="card-text">HTML & CSS</p>
+                    <p class="card-text">Objective-C (learning)</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;">🔨</p>
+                        <h4 class="card-title">Frameworks/Technologies</h4>
+                    </div>
+                    <p class="card-text">UIKit</p>
+                    <p class="card-text">CoreData</p>
+                    <p class="card-text">Firebase</p>
+                    <p class="card-text">RESTful APIs</p>
+                    <p class="card-text">Pandas</p>
+                    <p class="card-text">SwiftUI (learning)</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p style="float: right;">🙃</p>
+                        <h4 class="card-title">Interests</h4>
+                    </div>
+                    <p class="card-text">Hiking</p>
+                    <p class="card-text">Astronomy</p>
+                    <p class="card-text">Music</p>
+                    <p class="card-text">The Office</p>
+                    <p class="card-text">Making things</p>
+                    <p class="card-text">TECHNOLOGY</p>
+                </div>
+            </div>
+
+        </div>
+    </class>
+</section>
+
+<div id="footer">
+    <div class="container" id="Contact">
+      <div class="row">
+        <div class="col-md-3 footer-col">
+          <h5>Connect</h5>
+
+          <ul>
+            <li><a href="mailto:anisingh2000@gmail.com?subject=Hello!" target="_blank">Email Me</a></li>
+            <li><a href="https://twitter.com/anirbank2000" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/anirbankumar/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/anirbankumar" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-col">
+          <h5>Projects</h5>
+
+          <ul>
+            <li><a href="https://github.com/anirbankumar/wholefoodsautomated">Whole Foods Automation</a></li>
+            <li><a href="https://apps.apple.com/us/app/this-or-that-polls/id1506618182">This or That Polls</a></li>
+            <li><a href="https://apps.apple.com/us/app/hwdykm/id1503943306">HWDYKM</a></li>
+            <li><a href="https://apps.apple.com/us/app/basketball-keeper/id1145996975">Basketball Keeper</a></li>
+            <li><a href="https://github.com/anirbankumar/applemusicanalysis">Apple Music Analyzer</a></li>
+            <li><a href="https://apps.apple.com/us/app/locate-it-ar/id1471881053">Locate It AR</a></li>
+            <li><a href="https://github.com/anirbankumar/InstaMusic">InstaMusic</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="./js/jquery.3.4.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

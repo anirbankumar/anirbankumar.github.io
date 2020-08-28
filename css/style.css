@@ -1,0 +1,199 @@
+@import url(./fonts.css);
+@import url(./partials/_variables.css);
+@import url(./partials/_globals.css);
+
+/* HEADER AREA */
+.header_area .main-menu .navbar .navbar-brand {
+    font-family: 'Roboto';
+    font-weight: 900;
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 2rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px 'Roboto';
+    text-transform: uppercase;    
+    padding: 1.3rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#social-icons {
+    margin-top: 50px;
+}
+.social-icon {
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7475%) hue-rotate(284deg) brightness(94%) contrast(106%);
+}
+.social-icon:hover {
+    transform: scale(1.13);
+}
+.social-icon.last {
+    margin-left: 20px;
+}
+  
+  
+
+/* BANNER AREA*/
+
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.site-main .site-banner .site-title h1 {
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image >img {
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.about-area {
+    padding: 8rem 5rem;
+}
+
+.about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/ 60px 'Roboto';
+    letter-spacing: 16px;
+}
+
+.about-area .about-title .paragraph > p {
+    padding: .4rem 0;
+}
+
+.project-area .container .project-title h2 > span {
+    font: normal bold 49px/ 60px 'Roboto';
+    letter-spacing: 14px;
+}
+.project-area .container .card-deck {
+    margin-bottom: 100px;
+}
+.card {
+    border: none;
+    padding: 20px;
+}
+.card-body{
+    background: #f3f3f3;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
+    transition: 0.4s ease-in-out;
+    transform: scale(1);
+}
+
+.card-body:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 4px 4px 8px rgba(0,0,0,.06);
+    background-color: #e9e8e8;
+    transform: scale(1.03);
+}
+
+.btn-primary {
+    background: black;
+}
+.completed-project:hover {
+    background: black;
+}
+
+.completed-project {
+    background-color: black;
+}
+.in-work {
+    background-color: orange;
+    border: none;
+}
+.in-work:hover {
+    background: orange;
+    border: none;
+}
+
+.project-area {
+    padding: 0 2rem 0 2rem;
+}
+.interest-area {
+    padding: 0 2rem 0 2rem;
+}
+
+.interest-area .container .project-title h2 > span {
+    font: normal bold 49px/ 60px 'Roboto';
+    letter-spacing: 8px;
+}
+.contact-area {
+    padding: 0 2rem 0 2rem;
+}
+
+.contact-area .container-fluid .about-title h2 > span {
+    font: normal bold 49px/ 60px 'Roboto';
+    letter-spacing: 8px;
+}
+
+#footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #1B1B1B;
+  
+    color: #fff;
+  }
+  
+  .footer-col {
+    font-family:  'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .footer-col h5 {
+    text-transform: uppercase;
+    padding: 0;
+  }
+  .footer-col ul {
+    font-size: 1.3em;
+    padding: 0;
+    list-style-type: none;
+  }
+  .footer-col a {
+    color: #fff;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    opacity: 0.5;
+  }
+  .footer-col a:hover {
+    color: #fff;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    opacity: 0.8;
+  }
