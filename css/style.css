@@ -1,6 +1,4 @@
 @import url(./fonts.css);
-@import url(./partials/_variables.css);
-@import url(./partials/_globals.css);
 
 /* HEADER AREA */
 .header_area .main-menu .navbar .navbar-brand {
