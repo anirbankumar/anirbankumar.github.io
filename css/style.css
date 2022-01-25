@@ -13,7 +13,7 @@
 
 .header_area .main-menu .nav-item .nav-link {
     font: normal 500 15px/2px 'Roboto';
-    text-transform: uppercase;    
+    text-transform: uppercase;
     padding: 1.3rem;
     color: var(--title-color);
 }
@@ -41,14 +41,23 @@
     width: 40px;
     filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7475%) hue-rotate(284deg) brightness(94%) contrast(106%);
 }
+.me-img {
+  max-width:200%;
+  height:auto;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
 .social-icon:hover {
     transform: scale(1.13);
 }
 .social-icon.last {
     margin-left: 20px;
 }
-  
-  
+
+
 
 /* BANNER AREA*/
 
@@ -164,10 +173,10 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #1B1B1B;
-  
+
     color: #fff;
 }
-  
+
 .footer-col {
     font-family:  'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 700;
