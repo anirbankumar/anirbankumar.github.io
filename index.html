@@ -3,368 +3,329 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anirban Kumar | Software Engineer</title>
+  <title>Anirban Kumar | Engineer + Founder</title>
   <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/rocket_1f680.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Sora:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#home" aria-label="Go to home section">
-        <span class="brand-mark">AK</span>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a href="#home" class="brand" aria-label="Go to home">
+        <span class="brand-dot"></span>
         <span class="brand-text">Anirban Kumar</span>
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span>
         <span></span>
-        <span></span>
       </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="#home">Home</a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#resume">Resume</a>
+        <a href="#impact">Impact</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#interests">Interests</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <a class="resume-link" href="./img/Anirban-Resume-2025.pdf" target="_blank" rel="noopener">Resume</a>
     </div>
   </header>
 
   <main>
-    <section class="section hero" id="home">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Senior Software Engineer at Meta</p>
-        <h1>I build products that feel fast, useful, and human.</h1>
-        <p class="lead">
-          I am a software engineer based in Edison, NJ, currently working on backend infrastructure for a new
-          consumer hardware product at Meta. I also build and ship products independently, including Arrow.AI.
-        </p>
+    <section class="hero" id="home">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="kicker fade-up" style="--d: 0.02s;">Senior Software Engineer @ Meta</p>
+          <h1 class="fade-up" style="--d: 0.08s;">Building practical AI products and reliable infrastructure.</h1>
+          <p class="hero-lede fade-up" style="--d: 0.14s;">
+            I am an engineer in Edison, NJ focused on shipping products that are fast, useful, and robust.
+            I work on consumer hardware infrastructure at Meta and independently build Arrow.AI.
+          </p>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:anisingh2000@gmail.com?subject=Hello!">Email Me</a>
-          <a class="btn btn-secondary" href="./img/Anirban-Resume-2025.pdf" target="_blank" rel="noopener">View Resume PDF</a>
-        </div>
-
-        <ul class="stat-pills" aria-label="Quick highlights">
-          <li>600 daily active users built organically</li>
-          <li>80,000+ users across published apps</li>
-          <li>WWDC Scholarship Recipient (2x)</li>
-        </ul>
-      </div>
-
-      <div class="hero-side reveal">
-        <div class="profile-shell">
-          <img src="./img/me.jpg" alt="Anirban Kumar portrait">
-        </div>
-
-        <div class="mini-card">
-          <h2>Connect</h2>
-          <div class="social-links">
-            <a href="https://github.com/anirbankumar" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://twitter.com/anirbank2000?lang=en" target="_blank" rel="noopener">Twitter</a>
+          <div class="hero-actions fade-up" style="--d: 0.2s;">
+            <a class="btn btn-primary" href="mailto:anisingh2000@gmail.com?subject=Hello!">Email Me</a>
+            <a class="btn btn-ghost" href="./img/Anirban-Resume-2025.pdf" target="_blank" rel="noopener">View Resume PDF</a>
           </div>
         </div>
+
+        <aside class="hero-panel fade-up" style="--d: 0.16s;">
+          <img src="./img/me.jpg" alt="Portrait of Anirban Kumar" class="portrait">
+          <div class="panel-meta">
+            <p class="meta-title">Currently focused on</p>
+            <ul>
+              <li>Privacy-conscious audio + memory infrastructure</li>
+              <li>Cross-model AI product experiences (Arrow.AI)</li>
+              <li>Reliable backend systems and execution speed</li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section class="section" id="about">
-      <div class="section-heading reveal">
-        <p class="eyebrow">About Me</p>
-        <h2>Builder mindset, product focus, engineering rigor.</h2>
-      </div>
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="kicker">About</p>
+          <h2>Engineer first, product-minded by default.</h2>
+        </div>
 
-      <div class="card-grid two-col">
-        <article class="card reveal">
-          <h3>My Story</h3>
-          <p>
-            I graduated from Rutgers University with a degree in Computer Science and Information Technology.
-            I enjoy solving hard product and infrastructure problems and turning ideas into polished experiences.
-          </p>
-          <p>
-            Over the years, I have built iOS apps used by tens of thousands of people and worked across backend,
-            web, mobile, and ML workflows using technologies like Swift, Python, JavaScript, Java, C/C++, and cloud platforms.
-          </p>
-        </article>
+        <div class="two-col about-grid">
+          <article class="card reveal">
+            <h3>Background</h3>
+            <p>
+              I graduated from Rutgers University in Computer Science and Information Technology
+              (summa cum laude). I enjoy building software that solves real user problems quickly and clearly.
+            </p>
+            <p>
+              I have worked across backend, mobile, web, and ML with Python, JavaScript, Swift, Java,
+              Kotlin, C/C++, and cloud platforms.
+            </p>
+          </article>
 
-        <article class="card reveal">
-          <h3>Outside Work</h3>
-          <p>
-            I enjoy hiking, music, astronomy, sports, and building things. I also never get tired of rewatching
-            The Office.
-          </p>
-          <p>
-            I like pairing strong engineering fundamentals with a clear product sense, which is exactly how this
-            site is designed.
-          </p>
-        </article>
+          <article class="card reveal">
+            <h3>Outside work</h3>
+            <p>
+              I am into hiking, music, astronomy, and sports. I also enjoy turning ideas into products,
+              even outside work.
+            </p>
+            <div class="link-row">
+              <a href="https://github.com/anirbankumar" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://twitter.com/anirbank2000?lang=en" target="_blank" rel="noopener">Twitter</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="resume">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Resume Content</p>
-        <h2>Experience, skills, and impact highlights.</h2>
+    <section class="section" id="impact">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="kicker">Impact</p>
+          <h2>A few measurable outcomes.</h2>
+        </div>
+
+        <div class="metrics reveal" id="metrics">
+          <article class="metric-card">
+            <p class="metric-number" data-target="600" data-suffix="+">0</p>
+            <p class="metric-label">Daily active users on Arrow.AI</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-number" data-target="80000" data-suffix="+">0</p>
+            <p class="metric-label">Users across shipped iOS apps</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-number" data-target="10" data-prefix="< ">0</p>
+            <p class="metric-label">Minutes support triage (from ~60)</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-number" data-target="2" data-suffix="x">0</p>
+            <p class="metric-label">Apple WWDC Scholarship recipient</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="card-grid two-col">
-        <article class="card reveal">
-          <h3>Core Skills</h3>
-          <div class="skill-block">
-            <h4>Programming</h4>
-            <p>Python, JavaScript, Swift, Kotlin, Java, Scala, C/C++</p>
-          </div>
-          <div class="skill-block">
-            <h4>Frameworks and Libraries</h4>
-            <p>React, UIKit, REST APIs, NumPy, Pandas, Streamlit</p>
-          </div>
-          <div class="skill-block">
-            <h4>Cloud</h4>
-            <p>AWS (S3, AWS Python SDK), GCP (App Engine, Cloud Run, APIs and Services), Firebase</p>
-          </div>
-          <div class="skill-block">
-            <h4>AI and ML</h4>
-            <p>PyTorch, TensorFlow, OpenAI, LangChain, FAISS, HuggingFace</p>
-          </div>
-        </article>
+    <section class="section" id="experience">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="kicker">Experience</p>
+          <h2>Where I have built and what I shipped.</h2>
+        </div>
 
-        <article class="card reveal">
-          <h3>Education and Awards</h3>
-          <div class="info-block">
-            <h4>Rutgers University, New Brunswick, NJ</h4>
-            <p>Bachelor of Arts, Computer Science and Information Technology</p>
-            <p>Graduated summa cum laude</p>
-          </div>
-          <div class="info-block">
-            <h4>Apple WWDC Scholarship Recipient (2x)</h4>
-            <p>Selected in 2017 and 2019 among 350 students worldwide.</p>
-          </div>
-          <a class="btn btn-tertiary" href="./img/Anirban-Resume-2025.pdf" download="Anirban-Resume">Download Resume</a>
-        </article>
-      </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <header>
+              <h3>Meta - Senior Software Engineer</h3>
+              <p>March 2024 - Present</p>
+            </header>
+            <ul>
+              <li>Built a scalable, privacy-conscious audio ingestion + transcription pipeline with AWS Lambda, Kinesis, and Whisper.</li>
+              <li>Designed a secure memory system using Pinecone, PostgreSQL, and OpenAI embeddings.</li>
+              <li>Led code reviews and cross-functional execution across teams.</li>
+            </ul>
+          </article>
 
-      <div class="timeline">
-        <article class="card timeline-item reveal">
-          <div class="timeline-head">
-            <h3>Meta - Senior Software Engineer</h3>
-            <p>March 2024 - Present</p>
-          </div>
-          <ul>
-            <li>Built a scalable, privacy-conscious audio ingestion and transcription pipeline using AWS Lambda, Kinesis, and Whisper.</li>
-            <li>Designed a secure and queryable memory system with Pinecone, PostgreSQL, and OpenAI embeddings.</li>
-            <li>Led comprehensive code reviews and coordinated cross-functional execution across teams.</li>
-          </ul>
-        </article>
+          <article class="timeline-item reveal">
+            <header>
+              <h3>Arrow.AI - Founder</h3>
+              <p>September 2024 - Present</p>
+            </header>
+            <ul>
+              <li>Launched iOS app + web platform to access OpenAI, Anthropic, Perplexity, and Gemini in one product.</li>
+              <li>Scaled to 600 daily active users with no paid acquisition.</li>
+              <li>Built Swift apps and Node.js backend on GCP Cloud Run with Firebase.</li>
+            </ul>
+          </article>
 
-        <article class="card timeline-item reveal">
-          <div class="timeline-head">
-            <h3>Arrow.AI - Founder</h3>
-            <p>September 2024 - Present</p>
-          </div>
-          <ul>
-            <li>Launched an iOS app and website that unifies OpenAI, Anthropic, Perplexity, and Gemini models.</li>
-            <li>Scaled to 600 daily active users with zero paid advertising.</li>
-            <li>Built apps in Swift and backend services in Node.js, deployed on GCP Cloud Run with Firebase services.</li>
-          </ul>
-        </article>
+          <article class="timeline-item reveal">
+            <header>
+              <h3>Capital One - Senior Associate Software Engineer</h3>
+              <p>August 2023 - February 2024</p>
+            </header>
+            <ul>
+              <li>Developed an HSHD detection system across sensitive data sources.</li>
+              <li>Reduced access provisioning time from weeks to seconds.</li>
+              <li>Improved secure token provisioning workflows and compliance posture.</li>
+            </ul>
+          </article>
 
-        <article class="card timeline-item reveal">
-          <div class="timeline-head">
-            <h3>Capital One - Senior Associate Software Engineer</h3>
-            <p>August 2023 - February 2024</p>
-          </div>
-          <ul>
-            <li>Helped develop a new HSHD detection system across multiple data sources.</li>
-            <li>Reduced access provisioning times from weeks to seconds for faster and safer workflows.</li>
-            <li>Improved registration and secure token workflows for better compliance and reliability.</li>
-          </ul>
-        </article>
+          <article class="timeline-item reveal">
+            <header>
+              <h3>Capital One - Associate Software Engineer</h3>
+              <p>August 2022 - August 2023</p>
+            </header>
+            <ul>
+              <li>Built observability dashboards with AWS, Python, SQL, and Splunk.</li>
+              <li>Reduced support triage from roughly 1 hour to under 10 minutes.</li>
+              <li>Added PagerDuty and Slack alerting for faster incident response.</li>
+            </ul>
+          </article>
 
-        <article class="card timeline-item reveal">
-          <div class="timeline-head">
-            <h3>Capital One - Associate Software Engineer</h3>
-            <p>August 2022 - August 2023</p>
-          </div>
-          <ul>
-            <li>Built dashboards with AWS, Python, SQL, and Splunk to reduce support triaging time from about one hour to under 10 minutes.</li>
-            <li>Improved file delivery observability with stronger error handling, logging, and intelligent alerting.</li>
-            <li>Integrated PagerDuty and Slack alerting for faster issue response.</li>
-          </ul>
-        </article>
+          <article class="timeline-item reveal">
+            <header>
+              <h3>Capital One - Software Engineer</h3>
+              <p>June 2021 - August 2021</p>
+            </header>
+            <ul>
+              <li>Migrated bank statements feature in Android app from Java to Kotlin.</li>
+              <li>Reduced statement load and download times from roughly 6s to 3s.</li>
+              <li>Added accessibility improvements and localization for 7 languages.</li>
+            </ul>
+          </article>
 
-        <article class="card timeline-item reveal">
-          <div class="timeline-head">
-            <h3>Capital One - Software Engineer</h3>
-            <p>June 2021 - August 2021</p>
-          </div>
-          <ul>
-            <li>Converted the bank statements feature in the Android app from Java to Kotlin.</li>
-            <li>Reduced average statement load/download time from around 6 seconds to around 3 seconds.</li>
-            <li>Added accessibility improvements and localization for 7 languages.</li>
-          </ul>
-        </article>
-
-        <article class="card timeline-item reveal">
-          <div class="timeline-head">
-            <h3>T-Mobile - Software Engineer</h3>
-            <p>October 2020 - May 2021</p>
-          </div>
-          <ul>
-            <li>Built an operations dashboard with HTML, CSS, and JavaScript for network equipment insights.</li>
-            <li>Converted Python scripts to database-backed storage and reduced load times from minutes to seconds.</li>
-          </ul>
-        </article>
+          <article class="timeline-item reveal">
+            <header>
+              <h3>T-Mobile - Software Engineer</h3>
+              <p>October 2020 - May 2021</p>
+            </header>
+            <ul>
+              <li>Built dashboard for nationwide network equipment insights.</li>
+              <li>Migrated scripts to database-backed storage, reducing load time from minutes to seconds.</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section" id="projects">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Projects</p>
-        <h2>Past and present builds across web, mobile, automation, and AI.</h2>
-      </div>
-
-      <div class="projects-grid">
-        <article class="card project-card reveal">
-          <h3>The Listly</h3>
-          <p>React and Node.js app for generating compelling real estate listing descriptions in seconds.</p>
-          <p class="tagline">React, Node.js, AWS, GCP, Firebase, GPT-4</p>
-          <a href="https://thelistly.com" target="_blank" rel="noopener">Visit Site</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>Whole Foods Automation</h3>
-          <p>Automates the Whole Foods checkout process.</p>
-          <p class="tagline">Python, Selenium, BeautifulSoup</p>
-          <a href="https://github.com/anirbankumar/wholefoodsautomated" target="_blank" rel="noopener">On GitHub</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>This or That Polls</h3>
-          <p>Anonymous polling app with social and lightweight user-generated content mechanics.</p>
-          <p class="tagline">Swift, Firebase, Core Data</p>
-          <a href="https://apps.apple.com/us/app/this-or-that-polls/id1506618182" target="_blank" rel="noopener">On App Store</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>HWDYKM</h3>
-          <p>Create quizzes and have friends test how well they know you.</p>
-          <p class="tagline">Swift, Firebase</p>
-          <a href="https://apps.apple.com/us/app/hwdykm/id1503943306" target="_blank" rel="noopener">On App Store</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>Basketball Keeper</h3>
-          <p>Track basketball games and individual player stats.</p>
-          <p class="tagline">iOS, Objective-C</p>
-          <a href="https://apps.apple.com/us/app/basketball-keeper/id1145996975" target="_blank" rel="noopener">On App Store</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>Apple Music Analysis</h3>
-          <p>Analyze your most streamed songs, albums, and artists.</p>
-          <p class="tagline">Python, Data Analysis</p>
-          <a href="https://github.com/anirbankumar/applemusicanalysis" target="_blank" rel="noopener">On GitHub</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>Locate It AR</h3>
-          <p>Save important locations and find them later with AR overlays.</p>
-          <p class="tagline">Swift, ARKit, Core Data</p>
-          <a href="https://apps.apple.com/us/app/locate-it-ar/id1471881053" target="_blank" rel="noopener">On App Store</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>InstaMusic</h3>
-          <p>Share your currently playing Apple Music tracks to Instagram stories.</p>
-          <p class="tagline">Swift, iOS</p>
-          <a href="https://github.com/anirbankumar/InstaMusic" target="_blank" rel="noopener">On GitHub</a>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>Blockr</h3>
-          <p>Safari content blocker for iOS focused on speed and clean browsing.</p>
-          <p class="tagline">iOS, Objective-C</p>
-          <span class="status-pill">Being Updated</span>
-        </article>
-
-        <article class="card project-card reveal">
-          <h3>Inspired Me</h3>
-          <p>Motivational quotes app with Widget support.</p>
-          <p class="tagline">Swift, WidgetKit</p>
-          <span class="status-pill">In Progress</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="interests">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Interests</p>
-        <h2>What I enjoy learning, building, and exploring.</h2>
-      </div>
-
-      <div class="card-grid three-col">
-        <article class="card reveal">
-          <h3>Languages</h3>
-          <ul>
-            <li>Swift</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C/C++</li>
-            <li>HTML and CSS</li>
-            <li>Objective-C (learning)</li>
-          </ul>
-        </article>
-
-        <article class="card reveal">
-          <h3>Frameworks</h3>
-          <ul>
-            <li>UIKit</li>
-            <li>Core Data</li>
-            <li>Firebase</li>
-            <li>REST APIs</li>
-            <li>Pandas</li>
-            <li>SwiftUI (learning)</li>
-          </ul>
-        </article>
-
-        <article class="card reveal">
-          <h3>Personal Interests</h3>
-          <ul>
-            <li>Hiking</li>
-            <li>Astronomy</li>
-            <li>Music</li>
-            <li>The Office</li>
-            <li>Making things</li>
-            <li>Technology</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <article class="card contact-card reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Let us build something useful.</h2>
-        <p>
-          Reach out for product ideas, engineering collaboration, or just to chat about software and startups.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:anisingh2000@gmail.com?subject=Hello!">Email</a>
-          <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/anirbankumar" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://twitter.com/anirbank2000" target="_blank" rel="noopener">Twitter</a>
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="kicker">Projects</p>
+          <h2>Selected builds.</h2>
         </div>
-      </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <h3>The Listly</h3>
+            <p>Generate listing descriptions for realtors in seconds at thelistly.com.</p>
+            <p class="project-tech">React, Node.js, AWS, GCP, Firebase, GPT-4</p>
+            <a href="https://thelistly.com" target="_blank" rel="noopener">Visit</a>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Whole Foods Automated Delivery</h3>
+            <p>COVID-era automation script for Whole Foods checkout flow.</p>
+            <p class="project-tech">Python, Selenium, BeautifulSoup</p>
+            <a href="https://github.com/anirbankumar/wholefoodsautomated" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>This or That Polls</h3>
+            <p>Anonymous polling iOS app for creating and voting on social polls.</p>
+            <p class="project-tech">Swift, Firebase, Core Data</p>
+            <a href="https://apps.apple.com/us/app/this-or-that-polls/id1506618182" target="_blank" rel="noopener">App Store</a>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>HWDYKM</h3>
+            <p>Create custom quizzes and challenge friends.</p>
+            <p class="project-tech">Swift, Firebase</p>
+            <a href="https://apps.apple.com/us/app/hwdykm/id1503943306" target="_blank" rel="noopener">App Store</a>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Apple Music Analysis</h3>
+            <p>Analyze top songs, albums, and artists from listening data.</p>
+            <p class="project-tech">Python, Data Analysis</p>
+            <a href="https://github.com/anirbankumar/applemusicanalysis" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Locate It AR</h3>
+            <p>Save locations and rediscover them via AR overlays.</p>
+            <p class="project-tech">Swift, ARKit, Core Data</p>
+            <a href="https://apps.apple.com/us/app/locate-it-ar/id1471881053" target="_blank" rel="noopener">App Store</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="kicker">Skills</p>
+          <h2>Tools I reach for most often.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Programming</h3>
+            <p>Python, JavaScript, Swift, Kotlin, Java, Scala, C/C++</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Frameworks</h3>
+            <p>React, UIKit, REST APIs, NumPy, Pandas, Streamlit</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Cloud</h3>
+            <p>AWS (S3, Python SDK), GCP (App Engine, Cloud Run), Firebase</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>AI / ML</h3>
+            <p>PyTorch, TensorFlow, OpenAI, LangChain, FAISS, HuggingFace</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Education</h3>
+            <p>Rutgers University, BA in Computer Science &amp; IT, summa cum laude</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Awards</h3>
+            <p>Apple WWDC Scholarship Recipient (2017, 2019)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="shell">
+        <article class="contact-card reveal">
+          <p class="kicker">Contact</p>
+          <h2>Open to collaborations and product conversations.</h2>
+          <p>
+            Reach me directly by email, or connect on GitHub and LinkedIn.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:anisingh2000@gmail.com?subject=Hello!">Email</a>
+            <a href="https://github.com/anirbankumar" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://twitter.com/anirbank2000" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>Made by Anirban Kumar. <span id="current-year"></span></p>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <p>(c) <span id="current-year"></span> Anirban Kumar</p>
+      <a href="./img/Anirban-Resume-2025.pdf" target="_blank" rel="noopener">Resume PDF</a>
+    </div>
   </footer>
 
   <script src="./js/main.js"></script>
