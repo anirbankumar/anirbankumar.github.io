@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anirban Kumar | Engineer + Founder</title>
-  <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/rocket_1f680.png">
+  <meta name="description" content="Portfolio of Anirban Kumar, a Senior Associate Generative AI Engineer building AI, mobile, and cloud products.">
+  <meta property="og:title" content="Anirban Kumar | Generative AI Engineer">
+  <meta property="og:description" content="AI, mobile, and cloud engineering portfolio featuring enterprise AI platforms, Arrow.AI, and selected product work.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./img/anirban-banff.jpg">
+  <title>Anirban Kumar | Generative AI Engineer</title>
+  <link rel="icon" href="./img/banner-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header class="topbar">
     <div class="shell topbar-inner">
       <a href="#home" class="brand" aria-label="Go to home">
-        <span class="brand-dot"></span>
+        <span class="brand-mark">AK</span>
         <span class="brand-text">Anirban Kumar</span>
       </a>
 
@@ -24,15 +30,17 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
         <a href="#impact">Impact</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#toolkit">Toolkit</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <a class="resume-link" href="./img/Anirban-Resume-2025.pdf" target="_blank" rel="noopener">Resume</a>
+      <a class="resume-link" href="./img/Anirban-Resume-2026.pdf" target="_blank" rel="noopener">
+        <i class="fas fa-file-alt" aria-hidden="true"></i>
+        <span>Resume</span>
+      </a>
     </div>
   </header>
 
@@ -40,92 +48,89 @@
     <section class="hero" id="home">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="kicker fade-up" style="--d: 0.02s;">Senior Software Engineer @ Meta</p>
-          <h1 class="fade-up" style="--d: 0.08s;">Building practical AI products and reliable infrastructure.</h1>
+          <p class="eyebrow fade-up" style="--d: 0.02s;">Senior Associate Generative AI Engineer - Jersey City, NJ</p>
+          <h1 class="fade-up" style="--d: 0.08s;">I build AI products that feel useful before they feel flashy.</h1>
           <p class="hero-lede fade-up" style="--d: 0.14s;">
-            I am an engineer in Edison, NJ focused on shipping products that are fast, useful, and robust.
-            I work on consumer hardware infrastructure at Meta and independently build Arrow.AI.
+            I am Anirban Kumar, a software engineer working across generative AI, mobile apps, and cloud systems.
+            At JPMorgan Chase, I build employee-facing AI platforms. With Arrow.AI, I turn leading AI models into
+            approachable iOS, macOS, and web products.
           </p>
 
           <div class="hero-actions fade-up" style="--d: 0.2s;">
-            <a class="btn btn-primary" href="mailto:anisingh2000@gmail.com?subject=Hello!">Email Me</a>
-            <a class="btn btn-ghost" href="./img/Anirban-Resume-2025.pdf" target="_blank" rel="noopener">View Resume PDF</a>
+            <a class="btn btn-primary" href="mailto:anisingh2000@gmail.com?subject=Hello%20Anirban">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              <span>Email Me</span>
+            </a>
+            <a class="btn btn-secondary" href="./img/Anirban-Resume-2026.pdf" target="_blank" rel="noopener">
+              <i class="fas fa-download" aria-hidden="true"></i>
+              <span>Resume PDF</span>
+            </a>
+          </div>
+
+          <div class="hero-stats fade-up" aria-label="Portfolio highlights" style="--d: 0.26s;">
+            <article>
+              <strong>50,000+</strong>
+              <span>internal sources powered by RAG</span>
+            </article>
+            <article>
+              <strong>20+</strong>
+              <span>Bedrock-backed models monitored</span>
+            </article>
+            <article>
+              <strong>1,000+</strong>
+              <span>Arrow.AI users without ads</span>
+            </article>
           </div>
         </div>
 
-        <aside class="hero-panel fade-up" style="--d: 0.16s;">
-          <img src="./img/me.jpg" alt="Portrait of Anirban Kumar" class="portrait">
-          <div class="panel-meta">
-            <p class="meta-title">Currently focused on</p>
+        <aside class="hero-lab fade-up" style="--d: 0.16s;" aria-label="Current focus">
+          <div class="portrait-card">
+            <img src="./img/anirban-banff.jpg" alt="Portrait of Anirban Kumar in Banff" class="portrait">
+            <div class="sticker sticker-ai">AI</div>
+            <div class="sticker sticker-swift">Swift</div>
+            <div class="sticker sticker-cloud">Cloud</div>
+          </div>
+
+          <div class="console-card">
+            <div class="console-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p class="console-title">now shipping</p>
             <ul>
-              <li>Privacy-conscious audio + memory infrastructure</li>
-              <li>Cross-model AI product experiences (Arrow.AI)</li>
-              <li>Reliable backend systems and execution speed</li>
+              <li><span>01</span> Reusable React chat interfaces</li>
+              <li><span>02</span> Secure retrieval over enterprise context</li>
+              <li><span>03</span> Real-time AI chat across web and Apple platforms</li>
             </ul>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section section-intro" id="impact">
       <div class="shell">
         <div class="section-head reveal">
-          <p class="kicker">About</p>
-          <h2>Engineer first, product-minded by default.</h2>
-        </div>
-
-        <div class="two-col about-grid">
-          <article class="card reveal">
-            <h3>Background</h3>
-            <p>
-              I graduated from Rutgers University in Computer Science and Information Technology
-              (summa cum laude). I enjoy building software that solves real user problems quickly and clearly.
-            </p>
-            <p>
-              I have worked across backend, mobile, web, and ML with Python, JavaScript, Swift, Java,
-              Kotlin, C/C++, and cloud platforms.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <h3>Outside work</h3>
-            <p>
-              I am into hiking, music, astronomy, and sports. I also enjoy turning ideas into products,
-              even outside work.
-            </p>
-            <div class="link-row">
-              <a href="https://github.com/anirbankumar" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank" rel="noopener">LinkedIn</a>
-              <a href="https://twitter.com/anirbank2000?lang=en" target="_blank" rel="noopener">Twitter</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="impact">
-      <div class="shell">
-        <div class="section-head reveal">
-          <p class="kicker">Impact</p>
-          <h2>A few measurable outcomes.</h2>
+          <p class="eyebrow">Impact</p>
+          <h2>Product engineering with measurable outcomes.</h2>
         </div>
 
         <div class="metrics reveal" id="metrics">
           <article class="metric-card">
-            <p class="metric-number" data-target="600" data-suffix="+">0</p>
-            <p class="metric-label">Daily active users on Arrow.AI</p>
+            <p class="metric-number" data-target="50000" data-suffix="+">0</p>
+            <p class="metric-label">documents and sources feeding enterprise AI context</p>
           </article>
           <article class="metric-card">
-            <p class="metric-number" data-target="80000" data-suffix="+">0</p>
-            <p class="metric-label">Users across shipped iOS apps</p>
+            <p class="metric-number" data-target="20" data-suffix="+">0</p>
+            <p class="metric-label">models routed, monitored, and governed in production</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-number" data-target="1000" data-suffix="+">0</p>
+            <p class="metric-label">Arrow.AI users reached with no advertising</p>
           </article>
           <article class="metric-card">
             <p class="metric-number" data-target="10" data-prefix="< ">0</p>
-            <p class="metric-label">Minutes support triage (from ~60)</p>
-          </article>
-          <article class="metric-card">
-            <p class="metric-number" data-target="2" data-suffix="x">0</p>
-            <p class="metric-label">Apple WWDC Scholarship recipient</p>
+            <p class="metric-label">minute support triage, down from roughly one hour</p>
           </article>
         </div>
       </div>
@@ -134,131 +139,144 @@
     <section class="section" id="experience">
       <div class="shell">
         <div class="section-head reveal">
-          <p class="kicker">Experience</p>
-          <h2>Where I have built and what I shipped.</h2>
+          <p class="eyebrow">Experience</p>
+          <h2>Building the parts users see and the systems they depend on.</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item reveal">
             <header>
-              <h3>Meta - Senior Software Engineer</h3>
-              <p>March 2024 - Present</p>
+              <div>
+                <p class="role-company">JPMorgan Chase</p>
+                <h3>Senior Associate Generative AI Engineer</h3>
+              </div>
+              <p class="role-date">Nov 2025 - Present</p>
             </header>
-            <ul>
-              <li>Built a scalable, privacy-conscious audio ingestion + transcription pipeline with AWS Lambda, Kinesis, and Whisper.</li>
-              <li>Designed a secure memory system using Pinecone, PostgreSQL, and OpenAI embeddings.</li>
-              <li>Led code reviews and cross-functional execution across teams.</li>
-            </ul>
+            <p>
+              Developed and launched LLMSuite, giving JPMC employees access to AI models through reusable chat
+              interfaces, grounded retrieval, usage telemetry, and production reliability improvements.
+            </p>
+            <div class="tag-row">
+              <span>React</span>
+              <span>RAG</span>
+              <span>Bedrock</span>
+              <span>Telemetry</span>
+            </div>
           </article>
 
           <article class="timeline-item reveal">
             <header>
-              <h3>Arrow.AI - Founder</h3>
-              <p>September 2024 - Present</p>
+              <div>
+                <p class="role-company">Arrow.AI</p>
+                <h3>Founder</h3>
+              </div>
+              <p class="role-date">Sep 2024 - Present</p>
             </header>
-            <ul>
-              <li>Launched iOS app + web platform to access OpenAI, Anthropic, Perplexity, and Gemini in one product.</li>
-              <li>Scaled to 600 daily active users with no paid acquisition.</li>
-              <li>Built Swift apps and Node.js backend on GCP Cloud Run with Firebase.</li>
-            </ul>
+            <p>
+              Architected and launched iOS, iPadOS, macOS, and web apps that bring OpenAI, Anthropic, Perplexity,
+              and Gemini models into one place with memory, file uploads, subscriptions, and persistent chat history.
+            </p>
+            <div class="tag-row">
+              <span>Swift</span>
+              <span>Firebase</span>
+              <span>Node.js</span>
+              <span>Cloud Run</span>
+            </div>
           </article>
 
           <article class="timeline-item reveal">
             <header>
-              <h3>Capital One - Senior Associate Software Engineer</h3>
-              <p>August 2023 - February 2024</p>
+              <div>
+                <p class="role-company">Capital One</p>
+                <h3>Software Engineer to Senior Associate Software Engineer</h3>
+              </div>
+              <p class="role-date">Jun 2021 - Feb 2024</p>
             </header>
-            <ul>
-              <li>Developed an HSHD detection system across sensitive data sources.</li>
-              <li>Reduced access provisioning time from weeks to seconds.</li>
-              <li>Improved secure token provisioning workflows and compliance posture.</li>
-            </ul>
+            <p>
+              Built secure data access workflows, HSHD detection, file delivery observability, Slack and PagerDuty
+              alerting, and Kotlin improvements for Android bank statements.
+            </p>
+            <div class="tag-row">
+              <span>AWS</span>
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Kotlin</span>
+            </div>
           </article>
 
           <article class="timeline-item reveal">
             <header>
-              <h3>Capital One - Associate Software Engineer</h3>
-              <p>August 2022 - August 2023</p>
+              <div>
+                <p class="role-company">T-Mobile</p>
+                <h3>Software Engineer</h3>
+              </div>
+              <p class="role-date">Oct 2020 - May 2021</p>
             </header>
-            <ul>
-              <li>Built observability dashboards with AWS, Python, SQL, and Splunk.</li>
-              <li>Reduced support triage from roughly 1 hour to under 10 minutes.</li>
-              <li>Added PagerDuty and Slack alerting for faster incident response.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item reveal">
-            <header>
-              <h3>Capital One - Software Engineer</h3>
-              <p>June 2021 - August 2021</p>
-            </header>
-            <ul>
-              <li>Migrated bank statements feature in Android app from Java to Kotlin.</li>
-              <li>Reduced statement load and download times from roughly 6s to 3s.</li>
-              <li>Added accessibility improvements and localization for 7 languages.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item reveal">
-            <header>
-              <h3>T-Mobile - Software Engineer</h3>
-              <p>October 2020 - May 2021</p>
-            </header>
-            <ul>
-              <li>Built dashboard for nationwide network equipment insights.</li>
-              <li>Migrated scripts to database-backed storage, reducing load time from minutes to seconds.</li>
-            </ul>
+            <p>
+              Built an operations dashboard for nationwide network equipment data and moved Python scripts to
+              database-backed storage, cutting load times from minutes to 5 seconds.
+            </p>
+            <div class="tag-row">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section section-projects" id="projects">
       <div class="shell">
         <div class="section-head reveal">
-          <p class="kicker">Projects</p>
-          <h2>Selected builds.</h2>
+          <p class="eyebrow">Projects</p>
+          <h2>Selected builds from startup ideas to App Store experiments.</h2>
         </div>
 
         <div class="project-grid">
-          <article class="project-card reveal">
+          <article class="project-card project-feature reveal">
+            <div class="project-icon"><i class="fas fa-home" aria-hidden="true"></i></div>
+            <p class="project-year">Jan 2024</p>
             <h3>The Listly</h3>
-            <p>Generate listing descriptions for realtors in seconds at thelistly.com.</p>
-            <p class="project-tech">React, Node.js, AWS, GCP, Firebase, GPT-4</p>
-            <a href="https://thelistly.com" target="_blank" rel="noopener">Visit</a>
+            <p>
+              A responsive web product that helps realtors generate property listing descriptions in seconds using
+              GPT-4 and GPT-4 Vision.
+            </p>
+            <p class="project-tech">React, Node.js, AWS, GCP, Firebase</p>
+            <a href="https://thelistly.com" target="_blank" rel="noopener">Visit project</a>
           </article>
 
           <article class="project-card reveal">
+            <div class="project-icon"><i class="fas fa-shopping-basket" aria-hidden="true"></i></div>
+            <p class="project-year">Apr 2020</p>
             <h3>Whole Foods Automated Delivery</h3>
-            <p>COVID-era automation script for Whole Foods checkout flow.</p>
-            <p class="project-tech">Python, Selenium, BeautifulSoup</p>
-            <a href="https://github.com/anirbankumar/wholefoodsautomated" target="_blank" rel="noopener">GitHub</a>
+            <p>
+              Python automation that parsed grocery availability and automated checkout during COVID-era delivery
+              scarcity.
+            </p>
+            <p class="project-tech">Python, Selenium, BeautifulSoup, AppleScript</p>
+            <a href="https://github.com/anirbankumar/wholefoodsautomated" target="_blank" rel="noopener">View code</a>
           </article>
 
           <article class="project-card reveal">
+            <div class="project-icon"><i class="fas fa-poll" aria-hidden="true"></i></div>
+            <p class="project-year">Mar 2020</p>
             <h3>This or That Polls</h3>
-            <p>Anonymous polling iOS app for creating and voting on social polls.</p>
+            <p>
+              Anonymous polling app for creating polls, voting, and keeping progress without requiring an account.
+            </p>
             <p class="project-tech">Swift, Firebase, Core Data</p>
             <a href="https://apps.apple.com/us/app/this-or-that-polls/id1506618182" target="_blank" rel="noopener">App Store</a>
           </article>
 
           <article class="project-card reveal">
-            <h3>HWDYKM</h3>
-            <p>Create custom quizzes and challenge friends.</p>
-            <p class="project-tech">Swift, Firebase</p>
-            <a href="https://apps.apple.com/us/app/hwdykm/id1503943306" target="_blank" rel="noopener">App Store</a>
-          </article>
-
-          <article class="project-card reveal">
-            <h3>Apple Music Analysis</h3>
-            <p>Analyze top songs, albums, and artists from listening data.</p>
-            <p class="project-tech">Python, Data Analysis</p>
-            <a href="https://github.com/anirbankumar/applemusicanalysis" target="_blank" rel="noopener">GitHub</a>
-          </article>
-
-          <article class="project-card reveal">
+            <div class="project-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+            <p class="project-year">Sep 2019</p>
             <h3>Locate It AR</h3>
-            <p>Save locations and rediscover them via AR overlays.</p>
+            <p>
+              An ARKit app that uses device location and orientation to place saved-location pins in the real world.
+            </p>
             <p class="project-tech">Swift, ARKit, Core Data</p>
             <a href="https://apps.apple.com/us/app/locate-it-ar/id1471881053" target="_blank" rel="noopener">App Store</a>
           </article>
@@ -266,57 +284,76 @@
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="shell">
+    <section class="section" id="toolkit">
+      <div class="shell toolkit-grid">
         <div class="section-head reveal">
-          <p class="kicker">Skills</p>
-          <h2>Tools I reach for most often.</h2>
+          <p class="eyebrow">Toolkit</p>
+          <h2>The stack I reach for when ideas need to ship.</h2>
         </div>
 
-        <div class="skills-grid">
-          <article class="skill-card reveal">
-            <h3>Programming</h3>
+        <div class="skill-board reveal">
+          <article>
+            <h3>Languages</h3>
             <p>Python, JavaScript, Swift, Kotlin, Java, Scala, C/C++</p>
           </article>
-          <article class="skill-card reveal">
+          <article>
             <h3>Frameworks</h3>
             <p>React, UIKit, REST APIs, NumPy, Pandas, Streamlit</p>
           </article>
-          <article class="skill-card reveal">
+          <article>
             <h3>Cloud</h3>
-            <p>AWS (S3, Python SDK), GCP (App Engine, Cloud Run), Firebase</p>
+            <p>AWS S3, AWS Python SDK, GCP App Engine, Cloud Run, Firebase</p>
           </article>
-          <article class="skill-card reveal">
+          <article>
             <h3>AI / ML</h3>
             <p>PyTorch, TensorFlow, OpenAI, LangChain, FAISS, HuggingFace</p>
-          </article>
-          <article class="skill-card reveal">
-            <h3>Education</h3>
-            <p>Rutgers University, BA in Computer Science &amp; IT, summa cum laude</p>
-          </article>
-          <article class="skill-card reveal">
-            <h3>Awards</h3>
-            <p>Apple WWDC Scholarship Recipient (2017, 2019)</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-contact" id="contact">
-      <div class="shell">
-        <article class="contact-card reveal">
-          <p class="kicker">Contact</p>
-          <h2>Open to collaborations and product conversations.</h2>
+    <section class="section section-about" id="about">
+      <div class="shell about-strip reveal">
+        <div>
+          <p class="eyebrow">Background</p>
+          <h2>Rutgers graduate, Apple WWDC scholar, product-minded builder.</h2>
+        </div>
+        <div class="about-copy">
           <p>
-            Reach me directly by email, or connect on GitHub and LinkedIn.
+            I earned a Bachelor of Arts in Computer Science &amp; Information Technology from Rutgers University,
+            graduating summa cum laude. I am also a two-time Apple WWDC Scholarship recipient.
           </p>
-          <div class="contact-links">
-            <a href="mailto:anisingh2000@gmail.com?subject=Hello!">Email</a>
-            <a href="https://github.com/anirbankumar" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://twitter.com/anirbank2000" target="_blank" rel="noopener">Twitter</a>
-          </div>
-        </article>
+          <p>
+            Outside work, I like hiking, playing sports, building with LEGO, and following emerging AI ideas closely
+            enough to turn the useful ones into products.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="shell contact-panel reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Have an AI product, mobile app, or cloud system to talk through?</h2>
+        <p>Reach me directly by email, or connect through GitHub and LinkedIn.</p>
+        <div class="contact-links">
+          <a href="mailto:anisingh2000@gmail.com?subject=Hello%20Anirban">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/anirbankumar" target="_blank" rel="noopener">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/anirbankumar/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://twitter.com/anirbank2000" target="_blank" rel="noopener">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -324,7 +361,10 @@
   <footer class="footer">
     <div class="shell footer-inner">
       <p>(c) <span id="current-year"></span> Anirban Kumar</p>
-      <a href="./img/Anirban-Resume-2025.pdf" target="_blank" rel="noopener">Resume PDF</a>
+      <a href="./img/Anirban-Resume-2026.pdf" target="_blank" rel="noopener">
+        <i class="fas fa-file-alt" aria-hidden="true"></i>
+        <span>Resume PDF</span>
+      </a>
     </div>
   </footer>
 
