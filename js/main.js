@@ -3,10 +3,59 @@
   var siteNav = document.getElementById('site-nav');
   var currentYear = document.getElementById('current-year');
   var navLinks = document.querySelectorAll('.site-nav a');
+  var progressBar = document.querySelector('.scroll-progress span');
+  var heroLab = document.querySelector('.hero-lab');
+  var bubbles = document.querySelectorAll('.bubble');
+  var motionCards = document.querySelectorAll('.metric-card, .timeline-item, .project-card, .skill-board article');
+  var ticking = false;
+  var lastScrollY = window.scrollY;
+  var scrollVelocity = 0;
 
   if (currentYear) {
     currentYear.textContent = String(new Date().getFullYear());
   }
+
+  function updateScrollMotion() {
+    var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+    scrollVelocity += (window.scrollY - lastScrollY - scrollVelocity) * 0.16;
+    lastScrollY = window.scrollY;
+
+    if (progressBar) {
+      progressBar.style.transform = 'scaleX(' + progress + ')';
+    }
+
+    if (heroLab) {
+      heroLab.style.setProperty('--scroll-shift', Math.min(window.scrollY * 0.08, 34) + 'px');
+    }
+
+    bubbles.forEach(function (bubble, index) {
+      var speed = 0.08 + index * 0.025;
+      var drift = Math.sin(window.scrollY * 0.004 + index) * (8 + index * 2);
+      bubble.style.setProperty('--bubble-y', window.scrollY * speed + drift + 'px');
+      bubble.style.setProperty('--bubble-sway', drift + 'px');
+    });
+
+    motionCards.forEach(function (card, index) {
+      var bounds = card.getBoundingClientRect();
+      var distance = (bounds.top + bounds.height / 2 - window.innerHeight / 2) / window.innerHeight;
+      card.style.setProperty('--parallax-y', Math.max(-10, Math.min(10, distance * -10)) + 'px');
+      card.style.setProperty('--parallax-rotate', Math.max(-1.2, Math.min(1.2, distance * 1.2)) + 'deg');
+      card.style.setProperty('--scroll-breathe', Math.min(Math.abs(scrollVelocity) * 0.015, 0.35));
+    });
+
+    ticking = false;
+  }
+
+  function requestScrollMotion() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateScrollMotion);
+      ticking = true;
+    }
+  }
+
+  updateScrollMotion();
+  window.addEventListener('scroll', requestScrollMotion, { passive: true });
 
   if (menuToggle && siteNav) {
     menuToggle.addEventListener('click', function () {
@@ -39,7 +88,8 @@
       { threshold: 0.14 }
     );
 
-    revealEls.forEach(function (el) {
+    revealEls.forEach(function (el, index) {
+      el.style.setProperty('--reveal-delay', (index % 4) * 70 + 'ms');
       revealObserver.observe(el);
     });
   } else {
@@ -132,5 +182,5 @@
   }
 
   updateActiveNav();
-  window.addEventListener('scroll', updateActiveNav);
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
 })();
